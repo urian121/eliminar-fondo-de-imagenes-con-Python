@@ -25,20 +25,24 @@ Este proyecto permite a los usuarios subir imágenes y eliminar automáticamente
 ## Instalación
 
 1. Clona este repositorio:
-
+   ```bash
    git clone https://github.com/urian121/eliminar-fondo-de-imagenes-con-Python
+   ```
 
 2. Instala las dependencias:
-
+   ```bash
     pip install -r requirements.txt
+   ```
 
 3. Crea las carpetas necesarias para almacenar las imágenes cargadas y procesadas:
-
+```bash
     mkdir uploads processed
+   ```
 
 4. Ejecuta el servidor:
-
+   ```bash
     python app.py
+   ```
 
 5. Accede al proyecto en tu navegador en http://127.0.0.1:5000
 
@@ -49,5 +53,6 @@ Este proyecto permite a los usuarios subir imágenes y eliminar automáticamente
     Invita una cerveza 🍺 o un café ☕
     Paypal iamdeveloper86@gmail.com
     Da las gracias públicamente 🤓.
+   Y no olvides dejar tu estrella ⭐ en el repositorio, ¡dicen que trae buena suerte! 🍀  
 
 ## No olvides SUSCRIBIRTE 👍
