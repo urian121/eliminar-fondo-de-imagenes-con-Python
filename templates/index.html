@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliminar Fondo de Imágenes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center fw-bold">Eliminar Fondo de Imágenes con Python 🚀<hr /></h1>
+
+      <!-- Mostrar mensajes flash -->
+      {% with messages=get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <!-- Usamos las clases de Bootstrap para las alertas -->
+            <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="/process" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="mb-3">
+              <label for="image" class="form-label">Selecciona una imagen:</label>
+              <input type="file" class="form-control" id="image" name="image" multiple accept="image/*" required />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Procesar Imagen</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
