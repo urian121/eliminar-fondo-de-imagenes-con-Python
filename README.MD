@@ -4,7 +4,7 @@ Este proyecto permite a los usuarios subir imágenes y eliminar automáticamente
 
 ## Resultado final
 
-![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/Guardar-Archivo-e-Imagen-en-Django-Python.png)
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/eliminar-fondo-de-imagenes-con-python.png)
 
 
 ## Características
@@ -26,7 +26,7 @@ Este proyecto permite a los usuarios subir imágenes y eliminar automáticamente
 
 1. Clona este repositorio:
 
-   git clone https://github.com/tuusuario/Eliminar-Fondo-Imagenes.git
+   git clone https://github.com/urian121/eliminar-fondo-de-imagenes-con-Python
 
 2. Instala las dependencias:
 
